@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tv_titulo).text = product
         val message : String = findViewById<TextView>(R.id.tv_titulo).text.toString()*/
 
-        val myArray = arrayOf("jabon","pasta","sacate","shampo","espejo")
+        val myArray = arrayOf("jabon", "pasta", "sacate", "shampo", "espejo")
         Log.e("prueba1", myArray[4].toString())
         myArray[4] = "papel"
         Log.e("prueba1", myArray[4].toString())
@@ -31,15 +31,15 @@ class MainActivity : AppCompatActivity() {
         Log.e("prueba1", myArray.last().toString())
 
         myArray.forEach {
-            if(it.first()=='j'){
+            if (it.first() == 'j') {
                 Log.e("prueba1", "encontre la j")
-            } else{
+            } else {
                 Log.e("prueba1", "este valor no tiene j")
             }
-
         }
 
-
+        val myList: List<String> = listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+        val myMutableList: MutableList<String> = mutableListOf("Manzana", "Pera", "Durazno", "Platano", "Mango")
 
         binding.btnGuardar.setOnClickListener {
             val label = binding.etProducto.text.toString().trim()
