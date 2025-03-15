@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.prueba.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private val queso: String = "vaka"
+
 
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val mainArray: Array<String> =
-            arrayOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+            arrayOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo","hola")
 
         val mainList: List<String> =
             listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
