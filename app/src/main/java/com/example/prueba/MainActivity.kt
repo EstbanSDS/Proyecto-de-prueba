@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         Log.e("prueba1", myArray[4].first().toString())
         Log.e("prueba1", myArray.first().toString())
         Log.e("prueba1", myArray[4].last().toString())
-        Log.e("prueba1", myArray.last().toString())
 
         myArray.forEach { coso ->
             if (coso.first() == 'j') {
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val mainArray: Array<String> =
-            arrayOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+            arrayOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo, sabadaba")
 
         val mainList: List<String> =
             listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
