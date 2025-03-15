@@ -30,16 +30,46 @@ class MainActivity : AppCompatActivity() {
         Log.e("prueba1", myArray[4].last().toString())
         Log.e("prueba1", myArray.last().toString())
 
-        myArray.forEach {
-            if (it.first() == 'j') {
+        myArray.forEach { coso ->
+            if (coso.first() == 'j') {
                 Log.e("prueba1", "encontre la j")
             } else {
                 Log.e("prueba1", "este valor no tiene j")
             }
         }
 
-        val myList: List<String> = listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
-        val myMutableList: MutableList<String> = mutableListOf("Manzana", "Pera", "Durazno", "Platano", "Mango")
+        val mainArray: Array<String> =
+            arrayOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+
+        val mainList: List<String> =
+            listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+
+        val mainMutableList: MutableList<String> = mutableListOf("Manzana", "Pera", "Durazno", "Platano", "Mango")
+
+        // Array
+        val myArray2 = mainArray
+        Log.e("prueba", "Esta es mi Array: ${mainArray.joinToString()}")
+        myArray2[4] = "Nvidia"
+        Log.e("prueba", "Esta es mi Array: ${mainArray}")
+        Log.e("prueba", "Esta es mi Array: ${myArray2.joinToString("+")}")
+        myArray2.forEach { item ->
+            Log.e("myarray", item)
+        }
+
+        // List
+        val myList = mainList
+        Log.e("prueba", "Esta es mi lista: ${myList.joinToString()}")
+
+        // Lista mutable
+        val myMutableList = mainMutableList
+
+        myMutableList.add("Cacahuate")
+        myMutableList.removeAt(3)
+        myMutableList.remove("Pera")
+
+        myMutableList[2] = "Lenovo"
+
+        Log.e("prueba", myMutableList.joinToString())
 
         binding.btnGuardar.setOnClickListener {
             val label = binding.etProducto.text.toString().trim()
