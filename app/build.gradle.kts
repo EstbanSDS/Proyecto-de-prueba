@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+//    id("com.android.application")
+//    kotlin("android")
 }
 
 android {
@@ -47,4 +50,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Librerias
+
+    //Picasso
+    implementation (libs.picasso)
+    //Suport
+    implementation (libs.appcompat.v7)
+    implementation (libs.recyclerview.v7)
+    //Retrofit
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    //Cardview
+    implementation (libs.cardview.v7)
 }
