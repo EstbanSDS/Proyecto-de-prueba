@@ -2,6 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="celeste">#26DDFF</color>
-
+    <color name="celeste">#00BCD4</color>
+    <color name="verdeclaro">#70FD09</color>
 </resources>
